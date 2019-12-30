@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Dec 21 10:05:52 2019
+# Process ID: 3436
+# Current directory: C:/Users/nickh/OneDrive/Documents/School/2019-2020/CMPEN 331/Project/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14024 C:\Users\nickh\OneDrive\Documents\School\2019-2020\CMPEN 331\Project\project\project.xpr
+# Log file: C:/Users/nickh/OneDrive/Documents/School/2019-2020/CMPEN 331/Project/project/vivado.log
+# Journal file: C:/Users/nickh/OneDrive/Documents/School/2019-2020/CMPEN 331/Project/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/nickh/OneDrive/Documents/School/2019-2020/CMPEN 331/Project/project/project.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/nickh/Documents/xilinx/project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Sat Dec 21 10:07:46 2019] Launched impl_1...
+Run output will be captured here: C:/Users/nickh/OneDrive/Documents/School/2019-2020/CMPEN 331/Project/project/project.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 21 10:18:50 2019...

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Dec 21 10:05:52 2019
+# Process ID: 3436
+# Current directory: C:/Users/nickh/OneDrive/Documents/School/2019-2020/CMPEN 331/Project/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14024 C:\Users\nickh\OneDrive\Documents\School\2019-2020\CMPEN 331\Project\project\project.xpr
+# Log file: C:/Users/nickh/OneDrive/Documents/School/2019-2020/CMPEN 331/Project/project/vivado.log
+# Journal file: C:/Users/nickh/OneDrive/Documents/School/2019-2020/CMPEN 331/Project/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/nickh/OneDrive/Documents/School/2019-2020/CMPEN 331/Project/project/project.xpr}
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1

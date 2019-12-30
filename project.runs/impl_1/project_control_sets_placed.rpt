@@ -1,0 +1,86 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat Dec 21 10:08:23 2019
+| Host         : Nicks-XPS15 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file project_control_sets_placed.rpt
+| Design       : project
+| Device       : xc7z010
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     8 |
+|    Minimum number of control sets                        |     8 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    32 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     8 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             174 |           45 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              74 |           28 |
+| Yes          | No                    | No                     |              11 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               5 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+----------------+------------------+------------------+----------------+
+|   Clock Signal  |  Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------+----------------+------------------+------------------+----------------+
+|  FF2/mm2reg_reg |                |                  |                1 |              1 |
+|  FF1/E[0]       |                |                  |                1 |              3 |
+|  clk_IBUF_BUFG  | CU/wpcir_reg_0 | P1/pc_reg[7]_0   |                1 |              5 |
+|  clk_IBUF_BUFG  | CU/wpcir_reg_0 |                  |                4 |             11 |
+|  n_0_158_BUFG   |                |                  |               14 |             32 |
+|  clk_IBUF_BUFG  |                | CU/SR[0]         |               28 |             74 |
+| ~clk_IBUF_BUFG  | FF3/wwreg      |                  |               12 |             96 |
+|  clk_IBUF_BUFG  |                |                  |               45 |            202 |
++-----------------+----------------+------------------+------------------+----------------+
+
+

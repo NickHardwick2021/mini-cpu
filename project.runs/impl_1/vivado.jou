@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Dec 21 10:07:53 2019
+# Process ID: 7856
+# Current directory: C:/Users/nickh/OneDrive/Documents/School/2019-2020/CMPEN 331/Project/project/project.runs/impl_1
+# Command line: vivado.exe -log project.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source project.tcl -notrace
+# Log file: C:/Users/nickh/OneDrive/Documents/School/2019-2020/CMPEN 331/Project/project/project.runs/impl_1/project.vdi
+# Journal file: C:/Users/nickh/OneDrive/Documents/School/2019-2020/CMPEN 331/Project/project/project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source project.tcl -notrace
